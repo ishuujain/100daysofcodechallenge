@@ -29,7 +29,7 @@ When executed, your completed code should print the following:
 Generic Sports
 Each team has n players in Generic Sports
 Soccer Class
-Each team has 11 players in Soccer Class*/
+Each team has 11 players in Soccer Class *\
 
 Solution:
 import java.util.*;
