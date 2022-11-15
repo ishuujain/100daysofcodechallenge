@@ -1,0 +1,36 @@
+PROBLEM :  
+If income is less than 500000 then tax will be zero,
+if income is greater than 500000 and less than 1000000 then tax will be 20%
+And if income is greater than 1000000 then tax will be 30%.
+
+SOLUTION:
+
+import java.util.Scanner;
+import java.util.*;
+public class incometax {
+    public static void main(String args[])
+    {
+        System.out.println("Enter your income");
+        Scanner sc= new Scanner(System.in);
+        double income=sc.nextInt();
+        double tax;
+        if(income<500000)
+        {
+            tax=0;
+        }
+        else if(income>=500000 && income<=1000000)
+        {
+            tax=(int) income*0.2;
+        }
+
+        else
+        {
+            tax=(int) income*0.3;
+        }
+        System.out.println("your tax is: "+tax);
+
+    }
+}
+
+
+
