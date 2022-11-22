@@ -1,0 +1,39 @@
+PROBLEM:
+(LINEAR SEARCH)
+First, we have to traverse the array elements using a for loop.
+In each iteration of for loop, compare the search element with the current array element, and -
+If the element matches, then return the index of the corresponding array element.
+If the element does not match, then move to the next element.
+If there is no match or the search element is not present in the given array, return -1.
+
+
+SOLUTION:
+
+import java.util.*;
+
+public class linearsearch {
+
+    public static int linseach(int number[],int key)
+    {
+        for(int i=0;i<number.length;i++)
+        {
+            if (number[i]==key)
+            {
+            return i;
+         }
+    }
+        return -1;
+}
+       public static void main(String args[]) {
+           int number[] = {2, 4, 7, 46, 53, 69, 21, 20};
+           int key = 69;
+           int index = linseach(number, key);
+           if (index == -1) {
+               System.out.println("Not found");
+           }
+           else {
+               System.out.println("The given number is found at index \n" + index);
+           }
+       }
+}
+
