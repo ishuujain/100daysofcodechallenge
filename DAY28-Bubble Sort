@@ -1,0 +1,38 @@
+PROBLEM:
+SORTING(BUBBLE SORT)
+1. Run a nested for loop to traverse the input array using two variables i and j, such that 0 ≤ i < n-1 and 0 ≤ j < n-i-1
+2. If arr[j] is greater than arr[j+1] then swap these adjacent elements, else move on
+3. Print the sorted array.
+
+SOLUTION:
+public class sorting {
+    public static void bubblesort(int number[])
+    {
+        for(int turn=0;turn<number.length-1;turn++)
+        {
+            for(int j=0;j<number.length-1-turn;j++)
+            {
+                if(number[j]>number[j+1])
+                {
+                    int temp=number[j];
+                    number[j]=number[j+1];
+                    number[j+1]=temp;
+                }
+
+            }
+        }
+    }
+    public static void prnarray(int number[])
+    {
+        for(int j=0; j<number.length; j++)
+        {
+            System.out.print(" "+number[j]);
+        }
+    }
+    public static void main(String args[])
+    {
+        int number[]={ 40,7,60,3,1 };
+        bubblesort(number);
+        prnarray(number);
+    }
+}
