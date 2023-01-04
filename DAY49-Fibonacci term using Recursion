@@ -1,0 +1,37 @@
+PROBLEM:
+
+A program to print nth term of Fibonacci series using Recursion.
+
+Fibonacci Series: 0,1,1,2,3,5,8,13,21,34....
+
+Example:
+
+Input: 9
+
+Output: 21
+
+SOLUTION:
+
+public class fibonacci_recurtion {
+    static int fib(int n)
+    {
+        if (n==1)
+        {
+            return 0;
+        }
+        else if (n==2)
+        {
+            return 1;
+        }
+        else {
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+        public static void main(String[] args)
+    {
+        int n=10;
+        System.out.println("The element of fibonacci series is :"+fib(n));
+    }
+
+}
+
